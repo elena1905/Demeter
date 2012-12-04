@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<level>
+  <size width="3200" height="768" treasureCount="3"></size>
+  <background texture="texture/Background.Background"></background>
+  <foreground bottom="650" texture="texture/Foreground.Foreground"></foreground>
+  <bound id="bound1" left="0" right="3200" top="0" bottom="698"></bound>
+  <player id="player1" px="100" py="580" movable="true"></player>
+  
+  <bindingPoint id="binding1">
+    <p id="p1" px="100" py="580"></p>
+    <p id="p2" px="1200" py="580"></p>
+    <p id="p3" px="2200" py="580"></p>
+  </bindingPoint>
+
+  <door id="door1" px="40" py="561" levelFileName="level1-3.xml" levelName="Level 3"></door>
+  <door id="door2" px="3080" py="453" levelFileName="TotalLevel.xml" levelName="Mission Sun"></door>
+  
+  <ladder id="ladder1" px="220" py="72" height="540"></ladder>
+  <ladder id="ladder2" px="1400" py="290" height="360"></ladder>
+  <ladder id="ladder3" px="1580" py="109" height="270"></ladder>
+  <ladder id="ladder4" px="2184" py="109" height="540"></ladder>
+  <ladder id="ladder5" px="1947" py="199" height="180"></ladder>
+
+  <block id="ground1" px="0" py="650" width="330" height="48" type="ground"></block>
+  <block id="ground2" px="684" py="650" width="872" height="48" type="ground"></block>
+  <block id="ground3" px="2180" py="650" width="1208" height="48" type="ground"></block>
+  
+  <block id="block1" px="265" py="182" width="128" height="48" type="wall"></block>
+  <block id="block2" px="329" py="552" width="64" height="48" movable="true" type="movableBlock">
+    <bound left="329" right="600" top="552" bottom="552" positive="false"></bound>
+  </block>
+  <block id="block3" px="1445" py="380" width="64" height="240" type="wall"></block>
+  <block id="block4" px="1509" py="379" width="192" height="48" type="wall"></block>
+  <block id="block5" px="1324" py="199" width="256" height="48" type="wall"></block>
+  <block id="block6" px="1509" py="602" width="64" height="48" type="wall"></block>
+  <block id="block7" px="1800" py="379" width="192" height="48" type="wall"></block>
+  <block id="block8" px="1864" py="572" width="256" height="48" movable="true" type="movableBlock">
+    <bound left="1573" right="1864" top="572" bottom="572" positive="true"></bound>
+  </block>
+  <block id="block9" px="2120" py="602" width="64" height="48" type="wall"></block>
+  <block id="block10" px="1992" py="309" width="192" height="48" type="wall"></block>
+  <block id="block11" px="2800" py="602" width="192" height="48" type="wall"></block>
+
+  <gate id="gate1" px="1992" py="429" width="64" height="128" movable="true">
+    <bound left="1992" right="1992" top="358" bottom="429"></bound>
+  </gate>
+  
+  <platform id="platform1" px="3000" py="542" width="192" height="48"></platform>
+  
+  <deadlyobj id="deadlyobj1" px="384" py="698" width="300"></deadlyobj>
+  <deadlyobj id="deadlyobj2" px="1580" py="698" width="600"></deadlyobj>
+
+  <enemy id="enemy1" px="2300" py="611" movable="true" face_right="true"
+         left="100" right="3000"></enemy>
+  
+  <switch id="switch1" px="329" py="112">
+    <controlled objId="block2"></controlled>
+  </switch>
+  <switch id="switch2" px="1864" py="504" movable="true">
+    <controlled objId="block8"></controlled>
+  </switch>
+  <switch id="switch3" px="1800" py="309">
+    <controlled objId="lightsource1"></controlled>
+  </switch>
+  
+  <shiftStick id="shiftStick1" px="1400" py="129">
+    <controlled objId="mirror1"></controlled>
+  </shiftStick>
+  <shiftStick id="shiftStick2" px="2050" py="239">
+    <controlled objId="lightsource1"></controlled>
+  </shiftStick>
+  
+  <lightsource id="lightsource1" px="1900" py="82" angle="2.355" switchOn="false"></lightsource>
+  
+  <mirror id="mirror1" px="1600" py="450"></mirror>
+  
+  <launcher id="launcher1" px="1100" py="452" speed_x="-5" speed_y="5"
+            generate_time="4000" generate_type="enemy"></launcher>
+  <launcher id="launcher2" px="1150" py="52" speed_x="7" speed_y="0"
+            generate_time="4000" generate_type="enemy" direction="right"></launcher>
+
+  <treasure id="treasure5" px="980" py="390"></treasure>
+  <treasure id="treasure6" px="1510" py="454"></treasure>
+  <treasure id="treasure7" px="2500" py="382"></treasure>
+</level>

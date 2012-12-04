@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<level1>
+  <size width="1366" height="768" treasureCount="0"></size>
+  <treasureCount Id="treasure1" total="7"></treasureCount>
+  <background texture="texture/Background.Background"></background>
+  <foreground texture="null"></foreground>
+  <bound id="bound1" left="0" right="1330" top="0" bottom="698"></bound>
+  <player id="player1" px="200" py="628" movable="true"></player>
+
+  <block px="0" py="698" width="1366" height="48" type="ground"></block>
+  
+  <door id="door" px="130" py="609" levelFileName="TotalLevel.xml" levelName="World"></door>
+  <door id="door1" px="600" py="609" levelFileName="level1-1.xml" levelName="Level 1"></door>
+  <door id="door2" px="800" py="609" levelFileName="level1-2.xml" levelName="Level 2"></door>
+  <door id="door3" px="1000" py="609" levelFileName="level1-3.xml" levelName="Level 3"></door>
+  <door id="door4" px="1200" py="609" levelFileName="level1-4.xml" levelName="Level 4"></door>
+  
+  <topic id="topic1" px="400" py="200">
+                In this world
+    you need to achieve 7 light color through difficulties.
+        Finally, they will compose the sunshine element.
+                Good luck!
+  </topic>
+</level1>

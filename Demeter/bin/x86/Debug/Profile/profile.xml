@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<profile>
+  <startLevel name="TotalLevel.xml" />
+  <level1>
+    <level1-1.xml>
+      <treasure id="treasure1" />
+    </level1-1.xml>
+  </level1>
+  <level1>
+    <level1-2.xml>
+      <treasure id="treasure3" />
+    </level1-2.xml>
+  </level1>
+</profile>

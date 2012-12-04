@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<level>
+  <size width="2000" height="768" treasureCount="1"></size>
+  <background texture="texture/Background.Background"></background>
+  <foreground texture="texture/Foreground.Foreground"></foreground>
+  <bound id="bound1" left="20" right="1950" top="20" bottom="700"></bound>
+  <player id="player1" px="100" py="600" movable="true"></player>
+
+  <block type="ground" px="0" py="700" width="2000" height="48"></block>
+  
+  <door id="door1" px="40" py="617" levelFileName="level1-2.xml" levelName="Level 2"></door>
+  
+  <lightsource id="lightsource1" px="1200" py="50" angle="2.3" switchOn="false"></lightsource>
+  <switch id="switch1" px="200" py="630">
+    <controlled objId="lightsource1"></controlled>
+  </switch>
+
+  <ladder px="355" py="340" height="360"></ladder>
+  <block type="floor" px="400" py="442" width="192" height="48"></block>
+  <block type="floor" px="464" py="394" width="128" height="48"></block>
+  <block type="floor" px="528" py="346" width="64" height="48"></block>
+
+  <block type="movableBlock" id="block1" px="592" py="346" width="256" height="48" movable="true">
+    <bound left="592" right="916" top="346" bottom="346" positive="false"></bound>
+  </block>
+  <switch id="switch2" px="530" py="276">
+    <controlled objId="block1"></controlled>
+  </switch>
+  <mirror px="755" py="257" normalAngle="-1.5" movable="true"></mirror>
+
+  <switch id="switch3" px="1180" py="246">
+    <controlled objId="block1"></controlled>
+  </switch>
+  <block type="wall" px="1172" py="316" width="64" height="192"></block>
+  <block type="wall" px="1236" py="220" width="64" height="288"></block>
+  <block type="wall" px="1364" py="220" width="576" height="288"></block>
+  <block type="wall" px="1876" py="508" width="64" height="192"></block>
+  
+  <gate px="1300" py="460" width="64" height="240">
+    <bound left="1300" right="1300" top="221" bottom="659"></bound>
+  </gate>
+
+  <treasure id="treasure4" px="1500" py="520"></treasure>
+
+  <door id="door1" px="1500" py="617" levelFileName="level1-4.xml" levelName="Level 4"></door>
+
+  <switch id="switch4" px="1700" py="630">
+    <controlled objId="lightsource1"></controlled>
+  </switch>
+</level>

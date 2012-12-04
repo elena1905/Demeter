@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demeter", "Demeter\Demeter.csproj", "{839F424B-DF12-4B9F-84A7-9ED5EE43FEE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemeterContent", "Demeter\Content\DemeterContent.contentproj", "{65AC192C-1D13-40C2-ACB2-C2344DD62889}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{839F424B-DF12-4B9F-84A7-9ED5EE43FEE1}.Debug|x86.ActiveCfg = Debug|x86
+		{839F424B-DF12-4B9F-84A7-9ED5EE43FEE1}.Debug|x86.Build.0 = Debug|x86
+		{839F424B-DF12-4B9F-84A7-9ED5EE43FEE1}.Release|x86.ActiveCfg = Release|x86
+		{839F424B-DF12-4B9F-84A7-9ED5EE43FEE1}.Release|x86.Build.0 = Release|x86
+		{65AC192C-1D13-40C2-ACB2-C2344DD62889}.Debug|x86.ActiveCfg = Debug|x86
+		{65AC192C-1D13-40C2-ACB2-C2344DD62889}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

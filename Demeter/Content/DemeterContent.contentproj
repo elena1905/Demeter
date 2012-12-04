@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{65AC192C-1D13-40C2-ACB2-C2344DD62889}</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <ContentRootDirectory>Content</ContentRootDirectory>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <XnaPlatform>Windows</XnaPlatform>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <XnaPlatform>Windows</XnaPlatform>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.Sprite.Player.Run.png">
+      <Name>Object.Sprite.Player.Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.Sprite.Player.Die.png">
+      <Name>Object.Sprite.Player.Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Object.Sprite.Player.Idle.png">
+      <Name>Object.Sprite.Player.Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Object.Sprite.Player.Jump.png">
+      <Name>Object.Sprite.Player.Jump</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.StaticObject.Switch.SwitchOff.png">
+      <Name>Object.StaticObject.Switch.SwitchOff</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Object.StaticObject.Switch.SwitchOn.png">
+      <Name>Object.StaticObject.Switch.SwitchOn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.StaticObject.Mirror.Mirror1.png">
+      <Name>Object.StaticObject.Mirror.Mirror1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.StaticObject.Ladder.Ladder1.png">
+      <Name>Object.StaticObject.Ladder.Ladder1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="level\level1-4.xml">
+      <Name>level1-4</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="font\Hud.spritefont">
+      <Name>Hud</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+    <None Include="level\test.xml">
+      <Name>test</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.StaticObject.Light.Light1.png">
+      <Name>Object.StaticObject.Light.Light1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.Tile.Platform.Platform1.png">
+      <Name>Object.Tile.Platform.Platform1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.Sprite.Enemy.Die.png">
+      <Name>Object.Sprite.Enemy.Die</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.Sprite.Enemy.Run.png">
+      <Name>Object.Sprite.Enemy.Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.StaticObject.Launcher.png">
+      <Name>Object.StaticObject.Launcher</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.StaticObject.DeadlyObject.png">
+      <Name>Object.StaticObject.DeadlyObject</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.StaticObject.Ogre.Base.png">
+      <Name>Object.StaticObject.Ogre.Base</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.StaticObject.Ogre.Core.png">
+      <Name>Object.StaticObject.Ogre.Core</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="level\TotalLevel.xml">
+      <Name>TotalLevel</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="level\level1.xml">
+      <Name>level1</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Background.Background.png">
+      <Name>Background.Background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Foreground.Foreground.png">
+      <Name>Foreground.Foreground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="level\level1-2.xml">
+      <Name>level1-2</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="level\novice.xml">
+      <Name>novice</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="level\level1-1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Name>level1-1</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="level\level1-3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Name>level1-3</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.Sprite.Player.Climb.png">
+      <Name>Object.Sprite.Player.Climb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.Sprite.Hint.DoorHint.png">
+      <Name>Object.Sprite.Hint.DoorHint</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.Tile.Block.Ground.png">
+      <Name>Object.Tile.Block.Ground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.Tile.Block.Wall.png">
+      <Name>Object.Tile.Block.Wall</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.Tile.Block.MovableBlock.png">
+      <Name>Object.Tile.Block.MovableBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.StaticObject.Door.Door2.png">
+      <Name>Object.StaticObject.Door.Door2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Object.Tile.Block.MovableBlock2.png">
+      <Name>Object.Tile.Block.MovableBlock2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.StaticObject.Treasure.Orange.png">
+      <Name>Object.StaticObject.Treasure.Orange</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.StaticObject.Treasure.Blue.png">
+      <Name>Object.StaticObject.Treasure.Blue</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Object.StaticObject.Treasure.Cyan.png">
+      <Name>Object.StaticObject.Treasure.Cyan</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Object.StaticObject.Treasure.Green.png">
+      <Name>Object.StaticObject.Treasure.Green</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Object.StaticObject.Treasure.LightOff.png">
+      <Name>Object.StaticObject.Treasure.LightOff</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Object.StaticObject.Treasure.Purple.png">
+      <Name>Object.StaticObject.Treasure.Purple</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Object.StaticObject.Treasure.Red.png">
+      <Name>Object.StaticObject.Treasure.Red</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Object.StaticObject.Treasure.Yellow.png">
+      <Name>Object.StaticObject.Treasure.Yellow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Background.MenuBackground.png">
+      <Name>Background.MenuBackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.StaticObject.LadderRay.LadderRay1.png">
+      <Name>Object.StaticObject.LadderRay.LadderRay1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Hint.TurnOff.png">
+      <Name>Hint.TurnOff</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Hint.TurnOffWords.png">
+      <Name>Hint.TurnOffWords</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.StaticObject.ShiftStick.Negative.png">
+      <Name>Object.StaticObject.ShiftStick.Negative</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Object.StaticObject.ShiftStick.Positive.png">
+      <Name>Object.StaticObject.ShiftStick.Positive</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Object.StaticObject.ShiftStick.SwitchOff.png">
+      <Name>Object.StaticObject.ShiftStick.SwitchOff</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Object.Sprite.Hint.Left.png">
+      <Name>Object.Sprite.Hint.Left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Object.Sprite.Hint.Right.png">
+      <Name>Object.Sprite.Hint.Right</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Plant1-1.png">
+      <Name>Plant1-1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Plant1-2.png">
+      <Name>Plant1-2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Plant1-3.png">
+      <Name>Plant1-3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Plant1-4.png">
+      <Name>Plant1-4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Plant1-5.png">
+      <Name>Plant1-5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Plant1-6.png">
+      <Name>Plant1-6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="texture\Plant1-7.png">
+      <Name>Plant1-7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="texture\Plant1-0.png">
+      <Name>Plant1-0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="audio\backgroundMusic.mp3">
+      <Name>backgroundMusic</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

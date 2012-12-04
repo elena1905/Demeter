@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Demeter">
+</Property><Property Name="Solution File" Value="E:\VisualStudio2010\GamesEngines1\Assignment\Demeter\Demeter.sln">
+</Property><Property Name="Date" Value="2012年11月28日">
+</Property><Property Name="Time" Value="21:11">
+</Property><Property Name="Solution" Value="Demeter">
+</Property><Property Name="Solution File" Value="E:\VisualStudio2010\GamesEngines1\Assignment\Demeter\Demeter.sln">
+</Property><Property Name="Date" Value="2012年11月28日">
+</Property><Property Name="Time" Value="21:11:17">
+</Property></Properties><Event ErrorLevel="0" Project="Demeter" Source="Demeter\Demeter.csproj" Description="Upgraded XNA Game Studio project to XNA Framework 4.0.">
+</Event><Event ErrorLevel="0" Project="Demeter" Source="Demeter\Demeter.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Demeter" Source="Demeter\Demeter.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Demeter.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Demeter.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Demeter" Source="Demeter\Demeter.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Demeter" Source="Demeter\Demeter.csproj" Description="Upgraded XNA Framework references to XNA Framework 4.0.">
+</Event><Event ErrorLevel="0" Project="DemeterContent" Source="Demeter\Content\DemeterContent.contentproj" Description="Upgraded XNA Game Studio nested content projects to XNA Framework 4.0 and promoted to sibling project.">
+</Event></UpgradeLog>

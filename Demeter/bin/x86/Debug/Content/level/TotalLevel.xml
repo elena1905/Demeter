@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<totalLevel>
+  <size width="1366" height="768" treasureCount="0"></size>
+  <background texture="texture/Background.Background"></background>
+  <foreground texture="null"></foreground>
+  <cameraOffset px="0" py="0"></cameraOffset>
+  <bound id="bound1" left="0" right="1366" top="0" bottom="698"></bound>
+
+  <player id="player1" px="100" py="628" movable="true"></player>
+  
+  <bindingPoint id="binding1">
+    <p id="p1" px="100" py="628"></p>
+  </bindingPoint>
+  
+  <door id="door4" px="40" py="609" levelFileName="novice.xml" levelName="Underground" bindingId="p2"></door>
+
+  <block id="block1" px="575" py="420" width="192" height="48" type="floor"></block>
+  <block id="ground1" px="0" py="698" width="1366" height="48" type="ground"></block>
+  
+  <door id="door1" px="300" py="609" levelFileName="level1.xml" levelName="Mission Sun"></door>
+  <door id="door2" px="657" py="609" levelFileName="null" levelName="Locked..."></door>
+  <door id="door3" px="1015" py="609" levelFileName="null" levelName="Locked..."></door>
+  
+  <topic id="topic1" px="450" py="100">
+    Your mission:
+    Collect three basic elements in different levels!
+    Once you have done this, you help the Plant to grow.
+    The seed will sprout and grow up.
+    Just go! go! go!
+  </topic>
+</totalLevel>

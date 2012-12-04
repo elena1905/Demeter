@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<level>
+  <size width="1000" height="600" treasureCount="2"></size>
+  <background texture="texture/Background.Background6"></background>
+  <cameraOffset px="0" py="0"></cameraOffset>
+  <bound id="bound1" left="30" right="970" top="30" bottom="570"></bound>
+  <player id="player1" px="500" py="470" movable="true"></player>
+  <shiftStick id="shiftStick1" px="300" py="480">
+    <controlled objId="mirror1"></controlled>
+  </shiftStick>
+  <shiftStick id="shiftStick2" px="500" py="480">
+    <controlled objId="light1"></controlled>
+  </shiftStick>
+  <lightsource id="light1" px="400" py="310" angle="3"></lightsource>
+  <mirror id="mirror1" px="200" py="300"></mirror>
+  <mirror id="mirror2" px="500" py="300" normalAngle="3.14"></mirror>
+  <gate id="gate1" px="300" py="430" width="256" height="48" movable="true">
+    <bound left="300" right="400" top="430" bottom="430"></bound>
+  </gate>
+  <!--<enemy id="enemy1" px="250" py="300" movable="true" face_right="false"
+         left="100" right="700"></enemy>
+  <enemy id="enemy2" px="200" py="300" movable="true" face_right="true"
+         left="100" right="700"></enemy>
+  <ladder id="ladder1" px="580" py="300" height="270" movable="true"></ladder>
+  <switch id="switch1" px="250" py="361" movable="true">
+    <controlled objId="block1"></controlled>
+  </switch>
+  <switch id="switch2" px="450" py="361" movable="true">
+    <controlled objId="block1"></controlled>
+  </switch>
+  <block id="block1" px="300" py="430" width="256" height="48" movable="true">
+    <bound left="250" right="360" top="330" bottom="430"></bound>
+  </block>
+  <platform id="platform1" px="150" py="500" width="256" height="48"></platform>
+  <treasure id="treasure1" px="800" py="500"></treasure>
+  <treasure id="treasure2" px="400" py="370"></treasure>
+  <launcher id="launcher1" px="500" py="200" speed_x="-8" speed_y="-1"
+            generate_time="3000" generate_type="enemy"></launcher>
+  <deadlyobj id="deadlyobj1" px="850" py="570"></deadlyobj>
+  <ogre id="ogre1" px="600" py="572" offset="-80"></ogre>-->
+  <door id="door1" px="700" py="522" levelFileName="level1-2.xml"></door>
+</level>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<level>
+  <size width="3200" height="768" treasureCount="2"></size>
+  <background texture="texture/Background.Background"></background>
+  <foreground texture="texture/Foreground.Foreground"></foreground>
+  <cameraOffset px="0" py="0"></cameraOffset>
+  <bound id="bound1" left="0" right="3200" top="0" bottom="698"></bound>
+
+  <player id="player1" px="100" py="290" movable="true"></player>
+  
+  <bindingPoint id="binding1">
+    <p  id="p1" px="100" py="290"></p>
+    <p  id="p2" px="800" py="590"></p>
+    <p  id="p3" px="1900" py="350"></p>
+  </bindingPoint>
+  
+  <block id="ground1" px="0" py="360" width="256" height="48" type="floor"></block>
+  <block id="ground2" px="0" py="650" width="1536" height="48" type="ground"></block>
+  <block id="ground3" px="1617" py="649" width="128" height="48" type="ground"></block>
+  <block id="ground4" px="2800" py="650" width="400" height="48" type="ground"></block>
+  
+  <block id="block1" px="845" py="402" width="48" height="48" type="wall"></block>
+  <block id="block2" px="845" py="450" width="448" height="48" type="floor"></block>
+  <block id="block3" px="1229" py="402" width="48" height="48" type="wall"></block>
+  <block id="block4" px="2437" py="420" width="192" height="48" type="movableBlock" movable="true">
+    <bound left="2437" right="2641" top="420" bottom="602" positive="false"></bound>
+  </block>
+
+  <platform id="platform1" px="1745" py="400" width="256" height="48"></platform>
+  <platform id="platform1" px="2200" py="542" width="192" height="48"></platform>
+  <platform id="platform1" px="1745" py="200" width="1088" height="48"></platform>
+
+  <ladder id="ladder1" px="256" py="290" height="360"></ladder>
+  <ladder id="ladder2" px="800" py="290" height="360"></ladder>
+  <ladder id="ladder3" px="1700" py="20" height="630"></ladder>
+  <ladder id="ladder4" px="2392" py="340" height="270"></ladder>
+  <ladder id="ladder5" px="2833" py="20" height="630"></ladder>
+
+  <switch id="switch1" px="2500" py="351" movable="true">
+    <controlled objId="block4"></controlled>
+  </switch>
+  
+  <ogre id="ogre1" px="1536" py="650" offset="-70"></ogre>
+
+  <deadlyobj id="deadlyobj1" px="1745" py="698" width="1200"></deadlyobj>
+  
+  <launcher id="launcher1" px="1229" py="154" speed_x="-5" speed_y="5"
+            generate_time="3500" generate_type="enemy" generateAmount="2"></launcher>
+  <launcher id="launcher2" px="2380" py="650" speed_x="-8" speed_y="-13"
+            generate_time="3500" generate_type="enemy"></launcher>
+
+  <treasure id="treasure2" px="1000" py="200"></treasure>
+  <treasure id="treasure3" px="2550" py="280"></treasure>
+
+  <door id="door1" px="40" py="271" levelFileName="level1-1.xml" levelName="Level 1"></door>
+  <door id="door2" px="3140" py="561" levelFileName="level1-3.xml" levelName="Level 3"></door>
+</level>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<level>
+  <size width="2000" height="1068" treasureCount="0"></size>
+  <bound id="bound1" left="30" right="1970" top="30" bottom="900"></bound>
+
+  <player id="player1" px="100" py="800" movable="true"></player>
+  
+  <bindingPoint id="binding1">
+    <p id="p1" px="100" py="800"></p>
+    <p id="p2" px="1540" py="170"></p>
+  </bindingPoint>
+
+  <block type="ground" px="0" py="900" width="2000" height="48"></block>
+  <block type="floor" px="500" py="852" width="128" height="48"></block>
+  <block type="floor" px="628" py="804" width="128" height="48"></block>
+  <block type="floor" px="756" py="756" width="128" height="48"></block>
+  <block type="floor" px="884" py="708" width="128" height="48"></block>
+  <block type="floor" px="1012" py="708" width="384" height="48"></block>
+  <block type="floor" px="1396" py="708" width="64" height="192"></block>
+  
+  <ladder px="1500" py="90" height="810"></ladder>
+  <block type="floor" px="1545" py="240" width="128" height="48"></block>
+  <door px="1600" py="151" levelFileName="TotalLevel.xml" levelName="New World"></door>
+</level>
